@@ -1,6 +1,14 @@
 let leftPos = true;
 const btn = document.querySelector("#btn");
 
+// Helper for toggle classes
+const toggleClasses = (element, classToAdd, classToRemove) => {
+    let removeClass = element.classList.remove(classToAdd);
+    let addClass = element.classList.add(classToRemove);
+
+    return [removeClass, addClass];
+}
+
 btn.addEventListener("click", (e) => {
   e.preventDefault();
 });
@@ -10,29 +18,23 @@ validate = () => {
     password = document.querySelector("#passwordField");
 
   if (!name.value) {
-    name.classList.remove("isValid");
-    name.classList.add("isInvalid");
+    toggleClasses(name, 'isValid', 'isInvalid');
   } else {
-    name.classList.remove("isInvalid");
-    name.classList.add("isValid");
+    toggleClasses(name, 'isInvalid', 'isValid');
   }
 
   if (!password.value) {
-    password.classList.remove("isValid");
-    password.classList.add("isInvalid");
+    toggleClasses(password, 'isValid', 'isInvalid');
   } else {
-    password.classList.remove("isInvalid");
-    password.classList.add("isValid");
+    toggleClasses(password, 'isInvalid', 'isValid');
   }
 
   if (!name.value || !password.value) {
-    btn.classList.remove("isValid");
-    btn.classList.add("isInvalid");
+    toggleClasses(btn, 'isValid', 'isInvalid');
     changePosition(btn);
     return;
   }
-  btn.classList.remove("isInvalid");
-  btn.classList.add("isValid");
+  toggleClasses(btn, 'isInvalid', 'isValid');
 };
 
 changePosition = () => {
