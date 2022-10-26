@@ -25,12 +25,14 @@ validate = () => {
 
   if (!name.value) {
     toggleClasses(name, 'isValid', 'isInvalid');
+    name.classList.toggle('shakeAnimation');
   } else {
     toggleClasses(name, 'isInvalid', 'isValid');
   }
 
   if (!password.value) {
     toggleClasses(password, 'isValid', 'isInvalid');
+    password.classList.toggle('shakeAnimation');
   } else {
     toggleClasses(password, 'isInvalid', 'isValid');
   }
