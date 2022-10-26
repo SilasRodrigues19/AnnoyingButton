@@ -1,6 +1,3 @@
-let leftPos = true;
-const btn = document.querySelector("#btn");
-
 // Helper for toggle classes
 const toggleClasses = (element, classToAdd, classToRemove) => {
     let removeClass = element.classList.remove(classToAdd);
@@ -9,13 +6,22 @@ const toggleClasses = (element, classToAdd, classToRemove) => {
     return [removeClass, addClass];
 }
 
+
+selectElement = (selector) => {
+    return document.querySelector(selector);
+}
+
+let leftPos = true;
+const btn = selectElement('#btn');
+
+
 btn.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
 validate = () => {
-  let name = document.querySelector("#nameField"),
-    password = document.querySelector("#passwordField");
+    let name = selectElement('#nameField'),
+        password = selectElement('#passwordField');
 
   if (!name.value) {
     toggleClasses(name, 'isValid', 'isInvalid');
