@@ -15,7 +15,7 @@
   <h3 align="center">Annoying Submit Button</h3>
 
   <p align="center">
-    A personal challenger inspired by <a href="https://github.com/zainsadaqat">Zain Sadaqat</a>
+    A personal challenge inspired by <a href="https://github.com/zainsadaqat">Zain Sadaqat</a>
     at <a href="https://github.com/zainsadaqat/annoying-submit-button">
 annoying-submit-button</a>
   </p>
