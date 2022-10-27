@@ -105,4 +105,4 @@ Project Link: [https://github.com/SilasRodrigues19/AnnoyingButton](https://githu
 [license-url]: https://github.com/SilasRodrigues19/AnnoyingButton/blob/master/LICENSE
 
 <br><hr>
-[🔼 Back to top](Annoying-Submit-Button)
+[🔼 Back to top](#Annoying-Submit-Button)
